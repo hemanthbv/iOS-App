@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MultipleTouchIDTestViewController">
+            <connections>
+                <outlet property="btnIndex" destination="j12-pl-lA3" id="XkE-Di-f41"/>
+                <outlet property="btnLittle" destination="aca-fx-RCS" id="rG2-sq-QcO"/>
+                <outlet property="btnMiddle" destination="iX8-ip-uFV" id="kHx-HI-rCI"/>
+                <outlet property="btnRing" destination="v0a-QB-LdD" id="Uq2-ex-Fmw"/>
+                <outlet property="btnThumb" destination="Sv9-eh-ayU" id="9Q3-Io-bGT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sv9-eh-ayU" userLabel="Button - Thumb Finger TouchID">
+                    <rect key="frame" x="103" y="100" width="175" height="33"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="CD0-JQ-dnV"/>
+                        <constraint firstAttribute="height" constant="33" id="umr-C3-Zas"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Thumb Finger TouchID">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionThumbTouchID:" destination="-1" eventType="touchUpInside" id="Brx-yx-fDM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j12-pl-lA3" userLabel="Button - Index Finger TouchID">
+                    <rect key="frame" x="103" y="158" width="175" height="33"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="Ewu-pg-ugs"/>
+                        <constraint firstAttribute="width" constant="175" id="pja-CX-Tq0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Index Finger TouchID">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionIndexTouchID:" destination="-1" eventType="touchUpInside" id="Sc2-zd-6Pa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iX8-ip-uFV" userLabel="Button - Middle Finger TouchID">
+                    <rect key="frame" x="103" y="216" width="175" height="33"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="0FD-DD-4Ab"/>
+                        <constraint firstAttribute="width" constant="175" id="PVe-Wr-YZJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Middle Finger TouchID">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionMiddleTouchID:" destination="-1" eventType="touchUpInside" id="Zql-Kr-N2o"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0a-QB-LdD" userLabel="Button - Ring Finger TouchID">
+                    <rect key="frame" x="103" y="274" width="175" height="33"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="5Vq-mT-8S2"/>
+                        <constraint firstAttribute="height" constant="33" id="ZOc-jA-nWQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Ring Finger TouchID">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionRingTouchID:" destination="-1" eventType="touchUpInside" id="q2Z-lS-DXM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aca-fx-RCS" userLabel="Button - Little Finger TouchID">
+                    <rect key="frame" x="103" y="332" width="175" height="33"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="HB0-hc-kDn"/>
+                        <constraint firstAttribute="height" constant="33" id="anj-9x-Vfw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Little Finger TouchID">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionBabyTouchID:" destination="-1" eventType="touchUpInside" id="nUL-gE-eC1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-GM-uPL" userLabel="Button - Exit">
+                    <rect key="frame" x="103" y="390" width="175" height="33"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="LWd-pF-ebi"/>
+                        <constraint firstAttribute="width" constant="175" id="Tvm-jC-I2X"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Exit">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionExit:" destination="-1" eventType="touchUpInside" id="RfB-Fl-NX8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.81458053735452429" blue="0.13375448584246752" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NTt-GM-uPL" firstAttribute="centerX" secondItem="aca-fx-RCS" secondAttribute="centerX" id="3fl-zr-BII"/>
+                <constraint firstItem="iX8-ip-uFV" firstAttribute="top" secondItem="j12-pl-lA3" secondAttribute="bottom" constant="25" id="DKq-8A-ZXX"/>
+                <constraint firstItem="j12-pl-lA3" firstAttribute="centerX" secondItem="Sv9-eh-ayU" secondAttribute="centerX" id="MmE-TL-hqa"/>
+                <constraint firstItem="Sv9-eh-ayU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="Omv-mS-dSX"/>
+                <constraint firstItem="v0a-QB-LdD" firstAttribute="top" secondItem="iX8-ip-uFV" secondAttribute="bottom" constant="25" id="Sre-Nm-lop"/>
+                <constraint firstItem="iX8-ip-uFV" firstAttribute="centerX" secondItem="j12-pl-lA3" secondAttribute="centerX" id="acu-qN-Pxe"/>
+                <constraint firstItem="Sv9-eh-ayU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ban-6O-dPn"/>
+                <constraint firstItem="j12-pl-lA3" firstAttribute="top" secondItem="Sv9-eh-ayU" secondAttribute="bottom" constant="25" id="cDd-bu-9xx"/>
+                <constraint firstItem="aca-fx-RCS" firstAttribute="top" secondItem="v0a-QB-LdD" secondAttribute="bottom" constant="25" id="gjW-45-C9R"/>
+                <constraint firstItem="aca-fx-RCS" firstAttribute="centerX" secondItem="v0a-QB-LdD" secondAttribute="centerX" id="jmt-7q-xul"/>
+                <constraint firstItem="v0a-QB-LdD" firstAttribute="centerX" secondItem="iX8-ip-uFV" secondAttribute="centerX" id="qpj-bT-85x"/>
+                <constraint firstItem="NTt-GM-uPL" firstAttribute="top" secondItem="aca-fx-RCS" secondAttribute="bottom" constant="25" id="sf1-3o-cdt"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="64.5"/>
+        </view>
+    </objects>
+</document>
